@@ -1,0 +1,12 @@
+name: CI-CD Workflow
+
+on: push
+
+jobs:
+  hello-world-job:
+
+   runs-on: windows-latest
+   steps:
+     - name: Checkout repo
+       uses: actions/checkout@v4
+     - run: echo "Workflow triggerred"
